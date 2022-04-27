@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="ParameterSuite" verbose="1" >
+    <test name="Parameter Setters" >
+        <parameter name="testHitStrength" value="35"></parameter>
+        <parameter name="testWeaponHealth" value="85"></parameter>
+        <parameter name="testItemName" value="Key to Gilgamesh Castle"></parameter>
+        <parameter name="testItemWeight" value="6.2"></parameter>
+        <parameter name="testItemValue" value="25.6"></parameter>
+        <parameter name="testItemMagicValue" value="15"></parameter>
+        <groups>
+            <run>
+                <include name="parameterTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lyit.ParameterTest" />
+        </classes>
+    </test>
+
+</suite>

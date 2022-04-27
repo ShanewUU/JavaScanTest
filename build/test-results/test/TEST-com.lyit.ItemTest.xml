@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lyit.ItemTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-04-27T13:50:06" hostname="BIGBOX" time="0.26">
+  <properties/>
+  <testcase name="itemConstructor_InvalidData_ExpectException[0](, 1, 1, 0)" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="itemConstructor_InvalidData_ExpectException[1](Compass, 0, 1, 0)" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="itemConstructor_InvalidData_ExpectException[2](Compass, 1, -0.1, 0)" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="itemConstructor_InvalidData_ExpectException[3](Compass, 1, 1, -1)" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="itemConstructor_ValidData_ExpectException" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemName_EmptyValue_ExpectException[0](null)" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemName_EmptyValue_ExpectException[1]()" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemName_EmptyValue_ExpectException[2]( )" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemName_CorrectValue_Passed" classname="com.lyit.ItemTest" time="0.008"/>
+  <testcase name="setItemWeight_InvalidValue_ExpectException" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemWeight_CorrectValue_Passed" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemValue_InvalidValue_ExpectException" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemMagicValue_CorrectValue_Passed" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemValue_CorrectValue_Passed" classname="com.lyit.ItemTest" time="0.0"/>
+  <testcase name="setItemMagicValue_InvalidValue_ExpectException" classname="com.lyit.ItemTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

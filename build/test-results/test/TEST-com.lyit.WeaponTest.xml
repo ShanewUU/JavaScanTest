@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lyit.WeaponTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-04-27T13:50:06" hostname="BIGBOX" time="0.093">
+  <properties/>
+  <testcase name="setWeaponHealth_CorrectValue_Passed[0](1)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHealth_CorrectValue_Passed[1](100)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHealth_CorrectValue_Passed[2](50)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHealth_OverLimit_ExpectException" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHealth_UnderLimit_ExpectException" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHitStrength_CorrectValue_Passed[0](1)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHitStrength_CorrectValue_Passed[1](100)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHitStrength_CorrectValue_Passed[2](50)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHitStrength_OverLimit_ExpectException" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="setWeaponHitStrength_UnderLimit_ExpectException" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="weaponConstructor_InvalidData_ExpectException[0](Miracle Knife, 0.5, 25, 0, 65, 101, false)" classname="com.lyit.WeaponTest" time="0.028"/>
+  <testcase name="weaponConstructor_InvalidData_ExpectException[1](Broken Knife, 0.5, 25, 0, 5, 0, false)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="weaponConstructor_InvalidData_ExpectException[2](Pillow, 0.1, 5, 0, 0, 5, false)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="weaponConstructor_InvalidData_ExpectException[3](Cannon, 0.5, 25, 0, 101, 75, false)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="weaponConstructor_ValidData_Passed[0](Rusty Knife, 0.5, 25, 0, 1, 1, false)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <testcase name="weaponConstructor_ValidData_Passed[1](Sun Spear, 5.5, 600, 100, 100, 100, true)" classname="com.lyit.WeaponTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Parameter &apos;testHitStrength&apos; is required by @Test on method setWeaponHitStrength_CorrectValue_Pass but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+]]></system-err>
+</testsuite>

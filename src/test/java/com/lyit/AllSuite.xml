@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllSuite" verbose="1" >
+    <test name="Testing Setters" >
+        <groups>
+            <run>
+                <include name="setterTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lyit.ArmourTest" />
+            <class name="com.lyit.FoodTest" />
+            <class name="com.lyit.ItemTest" />
+            <class name="com.lyit.GameCharacterTest" />
+            <class name="com.lyit.WeaponTest" />
+        </classes>
+    </test>
+    <test name="Testing Constructors">
+        <groups>
+            <run>
+                <include name="constructorTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lyit.ArmourTest" />
+            <class name="com.lyit.FoodTest" />
+            <class name="com.lyit.ItemTest" />
+            <class name="com.lyit.GameCharacterTest" />
+            <class name="com.lyit.WeaponTest" />
+        </classes>
+    </test>
+    <test name="Character Dead Tests">
+        <classes>
+            <class name="com.lyit.GameCharacterDeadTest"/>
+        </classes>
+    </test>
+    <test name="Character Methods Tests">
+        <classes>
+            <class name="com.lyit.GameCharacterTest"/>
+        </classes>
+    </test>
+
+</suite>

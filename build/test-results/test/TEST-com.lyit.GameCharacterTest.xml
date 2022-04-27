@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lyit.GameCharacterTest" tests="61" skipped="0" failures="0" errors="0" timestamp="2022-04-27T13:50:06" hostname="BIGBOX" time="0.256">
+  <properties/>
+  <testcase name="attack_NoWeapons_CorrectString" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="characterConstructor_InvalidConstructor_ExpectException[0](, 100, 10.25, Idle)" classname="com.lyit.GameCharacterTest" time="0.016"/>
+  <testcase name="characterConstructor_InvalidConstructor_ExpectException[1](Gnark, -1, 10.25, Idle)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="characterConstructor_InvalidConstructor_ExpectException[2](Gnark, 101, 10.25, Idle)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="characterConstructor_InvalidConstructor_ExpectException[3](Gnark, 100, 0, Idle)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="characterConstructor_ValidConstructor_Passed[0](Gnark, 1, 1, Idle)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="characterConstructor_ValidConstructor_Passed[1](Gnark, 100, 10.25, Idle)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="defend_SetDefending_CorrectState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="dropItem_RemoveItem_CorrectValue" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[0](Fresh, 200, 91)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[1](Stale, 200, 84)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[2](Mouldy, 200, 81)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[3](Rotten, 200, 76)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[4](Fresh, -200, 59)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[5](Stale, -200, 59)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[6](Mouldy, -200, 59)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeHealth_HealthByCorrectAmount[7](Rotten, -200, 59)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="pickUpItem_AddItem_BelowLimit" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_ChangeCharacterState_SetToEating" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_FoodAtIndex_Passed" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_FoodEaten_ItemDropped" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_FoodNotAtIndex_DoesNotEat" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_HealthAtMax_NoChangeHealth" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="eat_PoisonHealthToZero_NoHealth" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipArmour_ArmourAtIndex_True" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipArmour_ArmourNotAtIndex_False" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipArmour_ShieldAlreadyEquipped_DefenceChanged" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipWeapon_TwoHandedWeapon_ShieldUnequipped" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipWeapon_WeaponAtIndex_True" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="attack_ChangeState_CorrectState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="attack_OneWeapon_CorrectString" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="attack_TwoWeapons_CorrectString" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="equipWeapon_WeaponNotAtIndex_False" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="getCharacterAttackValue_EquipWeapons_CorrectValue" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="getCharacterAttackValue_UnEquipWeapons_CorrectValue" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="getCharacterDefence_EquipArmour_CorrectValue" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="getCharacterDefence_UnEquipArmour_CorrectValue" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="pickUpItem_NotAddItem_AboveLimit" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="run_SetRunning_CorrectState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterHealth_CorrectValue_Passed[0](1)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterHealth_CorrectValue_Passed[1](100)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterHealth_CorrectValue_Passed[2](50)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterHealth_OverLimit_ExpectException" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterHealth_UnderLimit_ExpectException" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterName_EmptyValue_ExpectException[0](null)" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterName_EmptyValue_ExpectException[1]()" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterName_EmptyValue_ExpectException[2]( )" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setCharacterWeightLimit_UnderLimit_ExpectException" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setItemName_CorrectValue_Passed" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setTotalWeightItems_OverWeightLimit_ExpectException" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="setTotalWeightItems_WithinWeightLimit_Passed" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="sleep_HealthIncrease_CorrectHealth" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="sleep_HealthIncrease_HealthAtMaximum" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="sleep_SetSleeping_CorrectState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="unEquipArmour_ArmourAtIndex_DefenceChanged" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="unEquipArmour_ArmourNotAtIndex_DefenceNotChanged" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="unEquipWeapon_WeaponAtIndex_True" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="unEquipWeapon_WeaponNotAtIndex_False" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="wakeUp_Asleep_ChangeToIdle" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="wakeUp_NotAsleep_NoChangeToState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <testcase name="walk_SetWalking_CorrectState" classname="com.lyit.GameCharacterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Parameter &apos;testItemName&apos; is required by @Test on method setItemName_CorrectValue_Passed but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Parameter &apos;testWeaponHealth&apos; is required by @Test on method setWeaponHealth_CorrectValue_Pass but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+]]></system-err>
+</testsuite>

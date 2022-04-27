@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lyit.ArmourTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-04-27T13:50:06" hostname="BIGBOX" time="0.118">
+  <properties/>
+  <testcase name="armourConstructor_DefenceTooHigh_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="armourConstructor_DefenceTooLow_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="armourConstructor_HealthTooHigh_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="armourConstructor_HealthTooLow_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="armourConstructor_ValidConstructor_Passed" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourDefence_CorrectValue_Passed[0](1)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourDefence_CorrectValue_Passed[1](100)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourDefence_CorrectValue_Passed[2](50)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourDefence_SetOverLimit_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourDefence_SetUnderLimit_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourHealth_CorrectValue_Passed[0](1)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourHealth_CorrectValue_Passed[1](100)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourHealth_CorrectValue_Passed[2](50)" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourHealth_SetOverLimit_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <testcase name="setArmourHealth_SetUnderLimit_ExpectException" classname="com.lyit.ArmourTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
